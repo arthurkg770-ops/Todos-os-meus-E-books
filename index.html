@@ -1,115 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite E-books</title>
+<title>Meu Portal de Sites</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial;
-background:#000;
-color:#fff;
-text-align:center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: white;
 }
 
-h1{
-color:#d4af37;
-padding-top:50px;
-font-size:40px;
+header {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.price{
-font-size:22px;
-margin:20px 0;
+header h1 {
+    font-size: 32px;
+    color: gold;
 }
 
-.old{
-color:red;
-text-decoration:line-through;
-margin-right:10px;
+header p {
+    color: #ccc;
 }
 
-.new{
-color:#d4af37;
-font-size:28px;
-font-weight:bold;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:40px;
+.card {
+    background: #111;
+    border: 1px solid gold;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
 }
 
-.card{
-background:#111;
-padding:20px;
-width:250px;
-border:1px solid #333;
-border-radius:10px;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px gold;
 }
 
-.card h3{
-color:#d4af37;
+.card a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
 }
 
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:10px;
-background:#d4af37;
-color:#000;
-font-weight:bold;
-text-decoration:none;
-border-radius:8px;
-}
-
-.footer{
-margin-top:40px;
-padding:20px;
-border-top:1px solid #222;
-color:#aaa;
+.button {
+    background: gold;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
 }
 </style>
-
 </head>
+
 <body>
 
-<h1>ELITE E-BOOKS</h1>
-
-<div class="price">
-<span class="old">R$49,90</span>
-<span class="new">R$19,90</span>
-</div>
+<header>
+    <h1>🌐 Meu Portal de Sites</h1>
+    <p>Todos os meus links importantes em um só lugar</p>
+</header>
 
 <div class="container">
 
-<div class="card">
-<h3>Instagram do Zero</h3>
-<p>Aprenda a crescer rápido no Instagram.</p>
-<a class="btn" href="#">Comprar</a>
-</div>
+    <div class="card">
+        <h3>Site 1</h3>
+        <p>Descrição do site</p>
+        <a class="button" href="https://google.com" target="_blank">Acessar</a>
+    </div>
 
-<div class="card">
-<h3>IA para Renda</h3>
-<p>Use IA para ganhar dinheiro online.</p>
-<a class="btn" href="#">Comprar</a>
-</div>
+    <div class="card">
+        <h3>Site 2</h3>
+        <p>Descrição do site</p>
+        <a class="button" href="https://youtube.com" target="_blank">Acessar</a>
+    </div>
 
-<div class="card">
-<h3>Vendas Online</h3>
-<p>Estratégias para vender todos os dias.</p>
-<a class="btn" href="#">Comprar</a>
-</div>
+    <div class="card">
+        <h3>Site 3</h3>
+        <p>Descrição do site</p>
+        <a class="button" href="https://instagram.com" target="_blank">Acessar</a>
+    </div>
 
-</div>
+    <div class="card">
+        <h3>Adicionar mais</h3>
+        <p>Duplique esse bloco para novos sites</p>
+        <a class="button" href="#" target="_blank">Editar</a>
+    </div>
 
-<div class="footer">
-© 2026 Elite E-books
 </div>
 
 </body>
